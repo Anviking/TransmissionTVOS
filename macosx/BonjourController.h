@@ -22,7 +22,7 @@
  * DEALINGS IN THE SOFTWARE.
  *****************************************************************************/
 
-#import <Cocoa/Cocoa.h>
+@import Foundation;
 
 @interface BonjourController : NSObject <NSNetServiceDelegate>
 {

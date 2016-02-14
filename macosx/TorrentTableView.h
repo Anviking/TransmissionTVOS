@@ -22,8 +22,8 @@
  * DEALINGS IN THE SOFTWARE.
  *****************************************************************************/
 
-#import <Cocoa/Cocoa.h>
-#import <transmission.h>
+@import Foundation;
+#import "transmission.h"
 
 @class Controller;
 @class Torrent;
@@ -31,7 +31,7 @@
 
 #define GROUP_SEPARATOR_HEIGHT 18.0
 
-@interface TorrentTableView : NSOutlineView <NSOutlineViewDelegate, NSAnimationDelegate, NSPopoverDelegate>
+@interface TorrentTableView : NSOutlineView <NSAnimationDelegate>
 {
     IBOutlet Controller * fController;
     

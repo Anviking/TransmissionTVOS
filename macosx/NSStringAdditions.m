@@ -51,37 +51,20 @@
 #warning use localizedStringWithFormat: directly when 10.8-only
 + (NSString *) formattedUInteger: (NSUInteger) value
 {
-    if ([NSApp isOnMountainLionOrBetter])
         return [NSString localizedStringWithFormat: @"%lu", value];
-    else
-    {
-        static NSNumberFormatter * numberFormatter;
-        static dispatch_once_t onceToken;
-        dispatch_once(&onceToken, ^{
-            numberFormatter = [[NSNumberFormatter alloc] init];
-            [numberFormatter setNumberStyle: NSNumberFormatterDecimalStyle];
-            [numberFormatter setMaximumFractionDigits: 0];
-        });
-        
-        return [numberFormatter stringFromNumber: [NSNumber numberWithUnsignedInteger: value]];
-    }
 }
 
 #warning should we take long long instead?
 + (NSString *) stringForFileSize: (uint64_t) size
 {
-    if ([NSApp isOnMountainLionOrBetter])
         return [NSByteCountFormatterMtLion stringFromByteCount: size countStyle: NSByteCountFormatterCountStyleFile];
-    else
-        return [self stringForFileSizeLion: size showUnitUnless: nil unitsUsed: nil];
 }
 
 #warning should we take long long instead?
 + (NSString *) stringForFilePartialSize: (uint64_t) partialSize fullSize: (uint64_t) fullSize
 {
     NSString * partialString, * fullString;
-    if ([NSApp isOnMountainLionOrBetter])
-    {
+  
         NSByteCountFormatter * fileSizeFormatter = [[NSByteCountFormatterMtLion alloc] init];
         
         fullString = [fileSizeFormatter stringFromByteCount: fullSize];
@@ -101,13 +84,7 @@
         partialString = [fileSizeFormatter stringFromByteCount: partialSize];
         
         [fileSizeFormatter release];
-    }
-    else
-    {
-        NSString * units;
-        fullString = [self stringForFileSizeLion: fullSize showUnitUnless: nil unitsUsed: &units];
-        partialString = [self stringForFileSizeLion: partialSize showUnitUnless: units unitsUsed: nil];
-    }
+
     
     return [NSString stringWithFormat: NSLocalizedString(@"%@ of %@", "file size string"), partialString, fullString];
 }

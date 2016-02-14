@@ -22,7 +22,7 @@
  * DEALINGS IN THE SOFTWARE.
  *****************************************************************************/
 
-#import <Cocoa/Cocoa.h>
+@import Foundation;
 
 @class Torrent;
 
@@ -34,7 +34,7 @@
     NSString * fPath;
     Torrent * fTorrent;
     uint64_t fSize;
-    NSImage * fIcon;
+//    NSImage * fIcon;
     BOOL fIsFolder;
     NSMutableArray * fChildren;
 }
@@ -45,7 +45,7 @@
 @property (nonatomic, readonly) Torrent * torrent;
 
 @property (nonatomic, readonly) uint64_t size;
-@property (nonatomic, retain, readonly) NSImage * icon;
+//@property (nonatomic, retain, readonly) NSImage * icon;
 @property (nonatomic, readonly) BOOL isFolder;
 @property (nonatomic, retain, readonly) NSMutableArray * children;
 

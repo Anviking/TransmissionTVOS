@@ -22,10 +22,10 @@
  * DEALINGS IN THE SOFTWARE.
  *****************************************************************************/
 
-#import <Cocoa/Cocoa.h>
+@import Foundation;
+@import CoreGraphics;
+
 #import <transmission.h>
-#import <Quartz/Quartz.h>
-#import <Growl/Growl.h>
 #import "VDKQueue.h"
 
 @class AddMagnetWindowController;

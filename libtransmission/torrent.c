@@ -2126,13 +2126,13 @@ torrentCallScript (const tr_torrent * tor, const char * script)
 
 //      if (!fork ())
 //        {
-//          for (i=0; env[i]; ++i)
-//            putenv (env[i]);
-//
+          for (i=0; env[i]; ++i)
+            putenv (env[i]);
+
 //          if (execvp (script, cmd) == -1)
 //            tr_logAddTorErr (tor, "error executing script \"%s\": %s", cmd[0], tr_strerror (errno));
-//
-//          _exit (0);
+
+          _exit (0);
 //        }
 #endif
 

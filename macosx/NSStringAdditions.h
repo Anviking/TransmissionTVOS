@@ -22,7 +22,8 @@
  * DEALINGS IN THE SOFTWARE.
  *****************************************************************************/
 
-#import <Cocoa/Cocoa.h>
+@import Foundation;
+@import CoreGraphics;
 
 @interface NSString (NSStringAdditions)
 

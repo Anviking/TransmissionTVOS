@@ -668,16 +668,8 @@ static void sleepCallback(void * controller, io_service_t y, natural_t messageTy
     }
 }
 
-- (BOOL) applicationShouldHandleReopen: (NSApplication *) app hasVisibleWindows: (BOOL) visibleWindows
-{
-    NSWindow * mainWindow = [NSApp mainWindow];
-    if (!mainWindow || ![mainWindow isVisible])
-        [fWindow makeKeyAndOrderFront: nil];
-    
-    return NO;
-}
 
-- (NSApplicationTerminateReply) applicationShouldTerminate: (NSApplication *) sender
+- (void)applicationShouldTerminate: (NSApplication *) sender
 {
     if (!fQuitRequested && [fDefaults boolForKey: @"CheckQuit"])
     {
@@ -4940,8 +4932,6 @@ static void sleepCallback(void * controller, io_service_t y, natural_t messageTy
 - (void) rpcMovedTorrent: (Torrent *) torrent
 {
     [torrent update];
-    [torrent updateTimeMachineExclude];
-    
     if ([[fTableView selectedTorrents] containsObject: torrent])
         [fInfoController updateInfoStats];
 }

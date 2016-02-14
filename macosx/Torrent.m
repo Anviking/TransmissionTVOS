@@ -202,9 +202,9 @@ int trashDataFile(const char * filename)
         {
             switch ([ratioSetting intValue])
             {
-                case NSOnState: [self setRatioSetting: TR_RATIOLIMIT_SINGLE]; break;
-                case NSOffState: [self setRatioSetting: TR_RATIOLIMIT_UNLIMITED]; break;
-                case NSMixedState: [self setRatioSetting: TR_RATIOLIMIT_GLOBAL]; break;
+//                case NSOnState: [self setRatioSetting: TR_RATIOLIMIT_SINGLE]; break;
+//                case NSOffState: [self setRatioSetting: TR_RATIOLIMIT_UNLIMITED]; break;
+//                case NSMixedState: [self setRatioSetting: TR_RATIOLIMIT_GLOBAL]; break;
             }
         }
         NSNumber * ratioLimit;
@@ -237,7 +237,7 @@ int trashDataFile(const char * filename)
     
     [fHashString release];
     
-    [fIcon release];
+//    [fIcon release];
     
     [fFileList release];
     [fFlatFileList release];
@@ -258,7 +258,6 @@ int trashDataFile(const char * filename)
 - (void) closeRemoveTorrent: (BOOL) trashFiles
 {
     //allow the file to be indexed by Time Machine
-    [self setTimeMachineExclude: NO];
     
     tr_torrentRemove(fHandle, trashFiles, trashDataFile);
 }
@@ -266,7 +265,6 @@ int trashDataFile(const char * filename)
 - (void) changeDownloadFolderBeforeUsing: (NSString *) folder determinationType: (TorrentDeterminationType) determinationType
 {
     //if data existed in original download location, unexclude it before changing the location
-    [self setTimeMachineExclude: NO];
     
     tr_torrentSetDownloadDir(fHandle, [folder UTF8String]);
 	
@@ -318,8 +316,6 @@ int trashDataFile(const char * filename)
         [[NSNotificationCenter defaultCenter] postNotificationName: @"UpdateQueue" object: self];
     
     //when the torrent is first loaded, update the time machine exclusion
-    if (!fTimeMachineExcludeInitialized)
-        [self updateTimeMachineExclude];
 }
 
 - (void) startTransferIgnoringQueue: (BOOL) ignoreQueue
@@ -514,16 +510,16 @@ int trashDataFile(const char * filename)
 + (void) trashFile: (NSString *) path
 {
     //attempt to move to trash
-    if (![[NSWorkspace sharedWorkspace] performFileOperation: NSWorkspaceRecycleOperation
-                                                      source: [path stringByDeletingLastPathComponent] destination: @""
-                                                       files: [NSArray arrayWithObject: [path lastPathComponent]] tag: nil])
-    {
-        //if cannot trash, just delete it (will work if it's on a remote volume)
-        NSError * error;
-        if (![[NSFileManager defaultManager] removeItemAtPath: path error: &error])
-            NSLog(@"old Could not trash %@: %@", path, [error localizedDescription]);
-        else {NSLog(@"old removed %@", path);}
-    }
+//    if (![[NSWorkspace sharedWorkspace] performFileOperation: NSWorkspaceRecycleOperation
+//                                                      source: [path stringByDeletingLastPathComponent] destination: @""
+//                                                       files: [NSArray arrayWithObject: [path lastPathComponent]] tag: nil])
+//    {
+//        //if cannot trash, just delete it (will work if it's on a remote volume)
+//        NSError * error;
+//        if (![[NSFileManager defaultManager] removeItemAtPath: path error: &error])
+//            NSLog(@"old Could not trash %@: %@", path, [error localizedDescription]);
+//        else {NSLog(@"old removed %@", path);}
+//    }
 }
 
 - (void) moveTorrentDataFileTo: (NSString *) folder
@@ -540,16 +536,16 @@ int trashDataFile(const char * filename)
     if (oldCount < [newComponents count] && [[newComponents objectAtIndex: oldCount] isEqualToString: [self name]]
         && [folder hasPrefix: oldFolder])
     {
-        NSAlert * alert = [[NSAlert alloc] init];
-        [alert setMessageText: NSLocalizedString(@"A folder cannot be moved to inside itself.",
-                                                    "Move inside itself alert -> title")];
-        [alert setInformativeText: [NSString stringWithFormat:
-                        NSLocalizedString(@"The move operation of \"%@\" cannot be done.",
-                                            "Move inside itself alert -> message"), [self name]]];
-        [alert addButtonWithTitle: NSLocalizedString(@"OK", "Move inside itself alert -> button")];
-        
-        [alert runModal];
-        [alert release];
+//        NSAlert * alert = [[NSAlert alloc] init];
+//        [alert setMessageText: NSLocalizedString(@"A folder cannot be moved to inside itself.",
+//                                                    "Move inside itself alert -> title")];
+//        [alert setInformativeText: [NSString stringWithFormat:
+//                        NSLocalizedString(@"The move operation of \"%@\" cannot be done.",
+//                                            "Move inside itself alert -> message"), [self name]]];
+//        [alert addButtonWithTitle: NSLocalizedString(@"OK", "Move inside itself alert -> button")];
+//        
+//        [alert runModal];
+//        [alert release];
         
         return;
     }
@@ -564,17 +560,16 @@ int trashDataFile(const char * filename)
         [[NSNotificationCenter defaultCenter] postNotificationName: @"UpdateStats" object: nil];
     else
     {
-        NSAlert * alert = [[NSAlert alloc] init];
-        [alert setMessageText: NSLocalizedString(@"There was an error moving the data file.", "Move error alert -> title")];
-        [alert setInformativeText: [NSString stringWithFormat:
-                NSLocalizedString(@"The move operation of \"%@\" cannot be done.", "Move error alert -> message"), [self name]]];
-        [alert addButtonWithTitle: NSLocalizedString(@"OK", "Move error alert -> button")];
-        
-        [alert runModal];
-        [alert release];
+//        NSAlert * alert = [[NSAlert alloc] init];
+//        [alert setMessageText: NSLocalizedString(@"There was an error moving the data file.", "Move error alert -> title")];
+//        [alert setInformativeText: [NSString stringWithFormat:
+//                NSLocalizedString(@"The move operation of \"%@\" cannot be done.", "Move error alert -> message"), [self name]]];
+//        [alert addButtonWithTitle: NSLocalizedString(@"OK", "Move error alert -> button")];
+//        
+//        [alert runModal];
+//        [alert release];
     }
     
-    [self updateTimeMachineExclude];
 }
 
 - (void) copyTorrentFileTo: (NSString *) path
@@ -598,42 +593,42 @@ int trashDataFile(const char * filename)
         {
             NSString * volumeName = [[[NSFileManager defaultManager] componentsToDisplayForPath: downloadFolder] objectAtIndex: 0];
             
-            NSAlert * alert = [[NSAlert alloc] init];
-            [alert setMessageText: [NSString stringWithFormat:
-                                    NSLocalizedString(@"Not enough remaining disk space to download \"%@\" completely.",
-                                        "Torrent disk space alert -> title"), [self name]]];
-            [alert setInformativeText: [NSString stringWithFormat: NSLocalizedString(@"The transfer will be paused."
-                                        " Clear up space on %@ or deselect files in the torrent inspector to continue.",
-                                        "Torrent disk space alert -> message"), volumeName]];
-            [alert addButtonWithTitle: NSLocalizedString(@"OK", "Torrent disk space alert -> button")];
-            [alert addButtonWithTitle: NSLocalizedString(@"Download Anyway", "Torrent disk space alert -> button")];
-            
-            [alert setShowsSuppressionButton: YES];
-            [[alert suppressionButton] setTitle: NSLocalizedString(@"Do not check disk space again",
-                                                    "Torrent disk space alert -> button")];
-
-            const NSInteger result = [alert runModal];
-            if ([[alert suppressionButton] state] == NSOnState)
-                [fDefaults setBool: NO forKey: @"WarningRemainingSpace"];
-            [alert release];
-            
-            return result != NSAlertFirstButtonReturn;
+//            NSAlert * alert = [[NSAlert alloc] init];
+//            [alert setMessageText: [NSString stringWithFormat:
+//                                    NSLocalizedString(@"Not enough remaining disk space to download \"%@\" completely.",
+//                                        "Torrent disk space alert -> title"), [self name]]];
+//            [alert setInformativeText: [NSString stringWithFormat: NSLocalizedString(@"The transfer will be paused."
+//                                        " Clear up space on %@ or deselect files in the torrent inspector to continue.",
+//                                        "Torrent disk space alert -> message"), volumeName]];
+//            [alert addButtonWithTitle: NSLocalizedString(@"OK", "Torrent disk space alert -> button")];
+//            [alert addButtonWithTitle: NSLocalizedString(@"Download Anyway", "Torrent disk space alert -> button")];
+//            
+//            [alert setShowsSuppressionButton: YES];
+//            [[alert suppressionButton] setTitle: NSLocalizedString(@"Do not check disk space again",
+//                                                    "Torrent disk space alert -> button")];
+//
+//            const NSInteger result = [alert runModal];
+//            if ([[alert suppressionButton] state] == NSOnState)
+//                [fDefaults setBool: NO forKey: @"WarningRemainingSpace"];
+//            [alert release];
+//            
+//            return result != NSAlertFirstButtonReturn;
         }
     }
     return YES;
 }
-
-- (NSImage *) icon
-{
-    if ([self isMagnet])
-        return [NSImage imageNamed: @"Magnet"];
-    
-    #warning replace kGenericFolderIcon stuff with NSImageNameFolder on 10.6
-    if (!fIcon)
-        fIcon = [[[NSWorkspace sharedWorkspace] iconForFileType: [self isFolder] ? NSFileTypeForHFSTypeCode(kGenericFolderIcon)
-                                                                                : [[self name] pathExtension]] retain];
-    return fIcon;
-}
+//
+//- (NSImage *) icon
+//{
+//    if ([self isMagnet])
+//        return [NSImage imageNamed: @"Magnet"];
+//    
+//    #warning replace kGenericFolderIcon stuff with NSImageNameFolder on 10.6
+//    if (!fIcon)
+//        fIcon = [[[NSWorkspace sharedWorkspace] iconForFileType: [self isFolder] ? NSFileTypeForHFSTypeCode(kGenericFolderIcon)
+//                                                                                : [[self name] pathExtension]] retain];
+//    return fIcon;
+//}
 
 - (NSString *) name
 {
@@ -1460,10 +1455,12 @@ int trashDataFile(const char * filename)
         else
             offState = YES;
         
-        if (onState && offState)
-            return NSMixedState;
+//        if (onState && offState)
+//            return NSMixedState;
     }
-    return onState ? NSOnState : NSOffState;
+    
+    return YES;
+//    return onState ? NSOnState : NSOffState;
 }
 
 - (void) setFileCheckState: (NSInteger) state forIndexes: (NSIndexSet *) indexSet
@@ -1473,7 +1470,7 @@ int trashDataFile(const char * filename)
     for (NSUInteger index = [indexSet firstIndex], i = 0; index != NSNotFound; index = [indexSet indexGreaterThanIndex: index], i++)
         files[i] = index;
     
-    tr_torrentSetFileDLs(fHandle, files, count, state != NSOffState);
+//    tr_torrentSetFileDLs(fHandle, files, count, state != NSOffState);
     free(files);
     
     [self update];
@@ -1585,10 +1582,6 @@ int trashDataFile(const char * filename)
     return fStat->isStalled;
 }
 
-- (void) updateTimeMachineExclude
-{
-    [self setTimeMachineExclude: ![self allDownloaded]];
-}
 
 - (NSInteger) stateSortKey
 {
@@ -1840,18 +1833,18 @@ int trashDataFile(const char * filename)
             NSDictionary * statusInfo = @{ @"Status" : @(status), @"WasRunning" : @(wasRunning) };
             [[NSNotificationCenter defaultCenter] postNotificationName: @"TorrentFinishedDownloading" object: self userInfo: statusInfo];
             
-            //quarantine the finished data
-            NSString * dataLocation = [[self currentDirectory] stringByAppendingPathComponent: [self name]];
-            FSRef ref;
-            if (FSPathMakeRef((const UInt8 *)[dataLocation UTF8String], &ref, NULL) == noErr)
-            {
-                NSDictionary * quarantineProperties = [NSDictionary dictionaryWithObject: (NSString *)kLSQuarantineTypeOtherDownload forKey: (NSString *)kLSQuarantineTypeKey];
-                if (LSSetItemAttribute(&ref, kLSRolesAll, kLSItemQuarantineProperties, quarantineProperties) != noErr)
-                    NSLog(@"Failed to quarantine: %@", dataLocation);
-            }
-            else
-                NSLog(@"Could not find file to quarantine: %@", dataLocation);
-            
+//            //quarantine the finished data
+//            NSString * dataLocation = [[self currentDirectory] stringByAppendingPathComponent: [self name]];
+//            struct FSRef ref;
+//            if (FSPathMakeRef((const UInt8 *)[dataLocation UTF8String], &ref, NULL) == noErr)
+//            {
+//                NSDictionary * quarantineProperties = [NSDictionary dictionaryWithObject: (NSString *)kLSQuarantineTypeOtherDownload forKey: (NSString *)kLSQuarantineTypeKey];
+//                if (LSSetItemAttribute(&ref, kLSRolesAll, kLSItemQuarantineProperties, quarantineProperties) != noErr)
+//                    NSLog(@"Failed to quarantine: %@", dataLocation);
+//            }
+//            else
+//                NSLog(@"Could not find file to quarantine: %@", dataLocation);
+//            
             break;
         }
         case TR_LEECH:
@@ -1860,7 +1853,6 @@ int trashDataFile(const char * filename)
     }
     
     [self update];
-    [self updateTimeMachineExclude];
 }
 
 - (void) ratioLimitHit
@@ -1987,15 +1979,15 @@ int trashDataFile(const char * filename)
     
     return idleString;
 }
-
-- (void) setTimeMachineExclude: (BOOL) exclude
-{
-    NSString * path;
-    if ((path = [self dataLocation]))
-    {
-        CSBackupSetItemExcluded((CFURLRef)[NSURL fileURLWithPath: path], exclude, false);
-        fTimeMachineExcludeInitialized = YES;
-    }
-}
+//
+//- (void) setTimeMachineExclude: (BOOL) exclude
+//{
+//    NSString * path;
+//    if ((path = [self dataLocation]))
+//    {
+//        CSBackupSetItemExcluded((CFURLRef)[NSURL fileURLWithPath: path], exclude, false);
+//        fTimeMachineExcludeInitialized = YES;
+//    }
+//}
 
 @end

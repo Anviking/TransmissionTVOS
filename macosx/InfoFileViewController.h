@@ -22,7 +22,7 @@
  * DEALINGS IN THE SOFTWARE.
  *****************************************************************************/
 
-#import <Cocoa/Cocoa.h>
+@import Foundation;
 #import <Quartz/Quartz.h>
 #import "InfoViewController.h"
 

@@ -1,52 +1,63 @@
-*.a
-*.lo
-*.o
-.deps/
-/INSTALL
-/aclocal.m4
-/autom4te.cache/
-/cli/transmission-cli
-/config.guess
-/config.log
-/config.status
-/config.sub
-/configure
-/daemon/transmission-daemon
-/daemon/transmission-remote
-/depcomp
-/gtk/tr-core-dbus.h
-/gtk/transmission-gtk
-/gtk/transmission-gtk.desktop
-/install-sh
-/libtool
-/libtransmission/*-test
-/libtransmission/test-peer-id
-/libtransmission/version.h
-/ltmain.sh
-/m4/intltool.m4
-/m4/libtool.m4
-/m4/ltoptions.m4
-/m4/ltsugar.m4
-/m4/ltversion.m4
-/m4/lt~obsolete.m4
-/missing
-/mkinstalldirs
-/po/*.gmo
-/po/.intltool-merge-cache
-/po/Makefile.in.in
-/po/POTFILES
-/po/stamp-it
-/qt/moc_*.cpp
-/qt/qrc*.cpp
-/qt/qrc_application.cpp
-/qt/qtr.pro.user
-/qt/translations/*.qm
-/qt/transmission-qt
-/qt/ui_*.h
-/qt/ui_mainwin.h
-/transmission-gtk.spec
-/utils/transmission-create
-/utils/transmission-edit
-/utils/transmission-show
-Makefile
-Makefile.in
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+.build/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# Pods/
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the 
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://github.com/fastlane/fastlane/blob/master/docs/Gitignore.md
+
+fastlane/report.xml
+fastlane/screenshots

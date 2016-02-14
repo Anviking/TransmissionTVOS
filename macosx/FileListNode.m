@@ -37,7 +37,7 @@
 @synthesize path = fPath;
 @synthesize torrent = fTorrent;
 @synthesize size = fSize;
-@synthesize icon = fIcon;
+//@synthesize icon = fIcon;
 @synthesize isFolder = fIsFolder;
 @synthesize indexes = fIndexes;
 @synthesize children = fChildren;
@@ -90,7 +90,7 @@
     [fName release];
     [fPath release];
     [fIndexes release];
-    [fIcon release];
+//    [fIcon release];
     [fChildren release];
     [super dealloc];
 }
@@ -103,13 +103,13 @@
         return [NSString stringWithFormat: @"%@ (folder: %@)", fName, fIndexes];
 }
 
-- (NSImage *) icon
-{
-    if (!fIcon)
-        fIcon = [[[NSWorkspace sharedWorkspace] iconForFileType: fIsFolder ? NSFileTypeForHFSTypeCode(kGenericFolderIcon)
-                                                                            : [fName pathExtension]] retain];
-    return fIcon;
-}
+//- (NSImage *) icon
+//{
+//    if (!fIcon)
+//        fIcon = [[[NSWorkspace sharedWorkspace] iconForFileType: fIsFolder ? NSFileTypeForHFSTypeCode(kGenericFolderIcon)
+//                                                                            : [fName pathExtension]] retain];
+//    return fIcon;
+//}
 
 - (NSMutableArray *) children
 {

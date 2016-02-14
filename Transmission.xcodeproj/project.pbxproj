@@ -62,6 +62,33 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		8F0E963B1C701C8000B7E797 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0E963A1C701C8000B7E797 /* libz.tbd */; };
+		8F0E963D1C701CA300B7E797 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0E963C1C701CA300B7E797 /* libiconv.tbd */; };
+		8F0E963E1C701CC800B7E797 /* FileListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A2725B6D0DE5C4F5003445E7 /* FileListNode.m */; };
+		8F0E963F1C701CF200B7E797 /* GroupsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FB701B0D95CAEA0001F331 /* GroupsController.m */; };
+		8F0E96401C701D5B00B7E797 /* TrackerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A21A9BE1106D86A800F1C3C1 /* TrackerNode.m */; };
+		8F17FE291C70033F0066753B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F17FE281C70033F0066753B /* AppDelegate.swift */; };
+		8F17FE2B1C70033F0066753B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F17FE2A1C70033F0066753B /* ViewController.swift */; };
+		8F17FE2E1C70033F0066753B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F17FE2C1C70033F0066753B /* Main.storyboard */; };
+		8F17FE301C70033F0066753B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F17FE2F1C70033F0066753B /* Assets.xcassets */; };
+		8F17FE3B1C7003400066753B /* TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F17FE3A1C7003400066753B /* TestTests.swift */; };
+		8F17FE461C7003400066753B /* TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F17FE451C7003400066753B /* TestUITests.swift */; };
+		8F17FE561C70037C0066753B /* libdht.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A22CFCBA0FC24F710009BD3E /* libdht.a */; };
+		8F17FE571C70037C0066753B /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE75C3490C729E9500DBEFE0 /* libevent.a */; };
+		8F17FE581C70037C0066753B /* libminiupnp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1183480CE160960002D0F3 /* libminiupnp.a */; };
+		8F17FE591C70037C0066753B /* libnatpmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7A118D0D0B2EB800B5701F /* libnatpmp.a */; };
+		8F17FE5A1C70037C0066753B /* libtransmission.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D18389709DEC0030047D688 /* libtransmission.a */; };
+		8F17FE5B1C70037C0066753B /* libutp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E38544130DFEE3001F501B /* libutp.a */; };
+		8F17FE611C7004890066753B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F17FE601C7004890066753B /* CoreGraphics.framework */; };
+		8F17FE621C70052C0066753B /* Torrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBC2DE09C0970D00D5C571 /* Torrent.m */; };
+		8F17FE631C70052C0066753B /* TorrentGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A27F0F320E19AD9800B2DB97 /* TorrentGroup.m */; };
+		8F58A7571C702E10001442FC /* libcurl_tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F58A7561C702E10001442FC /* libcurl_tvOS.a */; };
+		8F68880F1C7025B300114BE8 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DE5CCCA0981D9BE00BE280E /* Defaults.plist */; };
+		8F6888121C702DE300114BE8 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6888101C702DE300114BE8 /* libcrypto.a */; };
+		8F6888131C702DE300114BE8 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6888111C702DE300114BE8 /* libssl.a */; };
+		8F9B7A1E1C701D770004CC25 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5CC9C0980656F00BE280E /* NSStringAdditions.m */; };
+		8F9B7A201C701DD90004CC25 /* ubuntu.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 8F9B7A1F1C701DD50004CC25 /* ubuntu.torrent */; };
+		8F9B7A271C701FC00004CC25 /* SessionSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9B7A261C701FC00004CC25 /* SessionSetup.m */; };
 		A200B9200A22798F007BBB1E /* InfoWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A200B83A0A2263BA007BBB1E /* InfoWindowController.m */; };
 		A2012AE20D77151D0056FD71 /* YingYangGroupTemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = A2012AE10D77151D0056FD71 /* YingYangGroupTemplate.png */; };
 		A20152640D1C1BE70081714F /* PinTemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = A20152630D1C1BE70081714F /* PinTemplate.png */; };
@@ -294,7 +321,6 @@
 		A2D307B10D9EC9F50051FD27 /* BlocklistStatusWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2D307B00D9EC9F50051FD27 /* BlocklistStatusWindow.xib */; };
 		A2D5972A0F5AE49E0001AB3C /* watch.c in Sources */ = {isa = PBXBuildFile; fileRef = A2D597280F5AE49E0001AB3C /* watch.c */; };
 		A2D77451154CC25700A62B93 /* WebSeedTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D7744F154CC25700A62B93 /* WebSeedTableView.h */; };
-		A2D77452154CC25700A62B93 /* WebSeedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D77450154CC25700A62B93 /* WebSeedTableView.m */; };
 		A2D77453154CC72B00A62B93 /* WebSeedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D77450154CC25700A62B93 /* WebSeedTableView.m */; };
 		A2D8CFBA15F82DFA0056E93D /* NSApplicationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A29D84031049C25600D1987A /* NSApplicationAdditions.m */; };
 		A2D8CFBB15F82E030056E93D /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5CC9C0980656F00BE280E /* NSStringAdditions.m */; };
@@ -476,6 +502,27 @@
 			remoteGlobalIDString = 4D18389609DEC0030047D688;
 			remoteInfo = libtransmission;
 		};
+		8F17FE371C7003400066753B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F17FE251C70033F0066753B;
+			remoteInfo = Test;
+		};
+		8F17FE421C7003400066753B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F17FE251C70033F0066753B;
+			remoteInfo = Test;
+		};
+		8F17FE541C7003770066753B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D18389609DEC0030047D688;
+			remoteInfo = libtransmission;
+		};
 		A226FDB00D0CDF6E005A7F71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -636,10 +683,36 @@
 		4DFBC2DE09C0970D00D5C571 /* Torrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Torrent.m; path = macosx/Torrent.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = macosx/Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Transmission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transmission.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0E96381C701C0500B7E797 /* libcurl_tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl_tvOS.a; path = "../Build-OpenSSL-cURL-master/curl/lib/libcurl_tvOS.a"; sourceTree = "<group>"; };
+		8F0E963A1C701C8000B7E797 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.2.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		8F0E963C1C701CA300B7E797 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.2.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
 		8F17FE1A1C6FFE280066753B /* libcrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcrypto.tbd; path = usr/lib/libcrypto.tbd; sourceTree = SDKROOT; };
 		8F17FE1C1C6FFE5F0066753B /* libssl.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libssl.tbd; path = usr/lib/libssl.tbd; sourceTree = SDKROOT; };
 		8F17FE1E1C70000A0066753B /* libcryptopp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcryptopp.a; path = "../cryptopp-5.6.2-ios-master/cryptopp-ios/lib/libcryptopp.a"; sourceTree = "<group>"; };
 		8F17FE201C7000720066753B /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../openssl-1.0.1i-ios-master/openssl-1.0.1i-ios/lib/libssl.a"; sourceTree = "<group>"; };
+		8F17FE261C70033F0066753B /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F17FE281C70033F0066753B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F17FE2A1C70033F0066753B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F17FE2D1C70033F0066753B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F17FE2F1C70033F0066753B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F17FE311C70033F0066753B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F17FE361C7003400066753B /* TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F17FE3A1C7003400066753B /* TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTests.swift; sourceTree = "<group>"; };
+		8F17FE3C1C7003400066753B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F17FE411C7003400066753B /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F17FE451C7003400066753B /* TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUITests.swift; sourceTree = "<group>"; };
+		8F17FE471C7003400066753B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F17FE5C1C7003950066753B /* Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Bridging-Header.h"; sourceTree = "<group>"; };
+		8F17FE601C7004890066753B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		8F58A7561C702E10001442FC /* libcurl_tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl_tvOS.a; path = "Build-OpenSSL-cURL-master/curl/lib/libcurl_tvOS.a"; sourceTree = "<group>"; };
+		8F6888101C702DE300114BE8 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "Build-OpenSSL-cURL-master/openssl/tvOS/lib/libcrypto.a"; sourceTree = "<group>"; };
+		8F6888111C702DE300114BE8 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "Build-OpenSSL-cURL-master/openssl/tvOS/lib/libssl.a"; sourceTree = "<group>"; };
+		8F9B7A1F1C701DD50004CC25 /* ubuntu.torrent */ = {isa = PBXFileReference; lastKnownFileType = file; path = ubuntu.torrent; sourceTree = "<group>"; };
+		8F9B7A251C701FC00004CC25 /* SessionSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionSetup.h; sourceTree = "<group>"; };
+		8F9B7A261C701FC00004CC25 /* SessionSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionSetup.m; sourceTree = "<group>"; };
+		8FA5629D1C7007D500EFA5D5 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../openssl-1.0.1i-ios-master/openssl-1.0.1i-ios/lib/libcrypto.a"; sourceTree = "<group>"; };
+		8FB2C9961C700EE100A564AA /* libcrypto_tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto_tvOS.a; path = "../c61c0f7d9ab60f53ebb0-8881fbc554c62cad05d73844593fc4cb41cbd976/lib/libcrypto_tvOS.a"; sourceTree = "<group>"; };
+		8FB2C9971C700EE100A564AA /* libssl_tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl_tvOS.a; path = "../c61c0f7d9ab60f53ebb0-8881fbc554c62cad05d73844593fc4cb41cbd976/lib/libssl_tvOS.a"; sourceTree = "<group>"; };
 		A200B8390A2263BA007BBB1E /* InfoWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoWindowController.h; path = macosx/InfoWindowController.h; sourceTree = "<group>"; };
 		A200B83A0A2263BA007BBB1E /* InfoWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoWindowController.m; path = macosx/InfoWindowController.m; sourceTree = "<group>"; };
 		A2012AE10D77151D0056FD71 /* YingYangGroupTemplate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YingYangGroupTemplate.png; path = macosx/Images/YingYangGroupTemplate.png; sourceTree = "<group>"; };
@@ -1253,6 +1326,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F17FE231C70033F0066753B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0E963D1C701CA300B7E797 /* libiconv.tbd in Frameworks */,
+				8F0E963B1C701C8000B7E797 /* libz.tbd in Frameworks */,
+				8F17FE611C7004890066753B /* CoreGraphics.framework in Frameworks */,
+				8F17FE561C70037C0066753B /* libdht.a in Frameworks */,
+				8F17FE571C70037C0066753B /* libevent.a in Frameworks */,
+				8F17FE581C70037C0066753B /* libminiupnp.a in Frameworks */,
+				8F17FE591C70037C0066753B /* libnatpmp.a in Frameworks */,
+				8F17FE5A1C70037C0066753B /* libtransmission.a in Frameworks */,
+				8F17FE5B1C70037C0066753B /* libutp.a in Frameworks */,
+				8F6888121C702DE300114BE8 /* libcrypto.a in Frameworks */,
+				8F6888131C702DE300114BE8 /* libssl.a in Frameworks */,
+				8F58A7571C702E10001442FC /* libcurl_tvOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F17FE331C7003400066753B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F17FE3E1C7003400066753B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A22CFCB80FC24F710009BD3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1343,6 +1449,8 @@
 			children = (
 				32CA4F630368D1EE00C91783 /* Transmission_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				8F9B7A251C701FC00004CC25 /* SessionSetup.h */,
+				8F9B7A261C701FC00004CC25 /* SessionSetup.m */,
 				4DF0C5AA0899190500DD8943 /* Controller.h */,
 				4DF0C5A90899190500DD8943 /* Controller.m */,
 				4DFBC2DD09C0970D00D5C571 /* Torrent.h */,
@@ -1443,6 +1551,9 @@
 				A22CFCBA0FC24F710009BD3E /* libdht.a */,
 				A2E38544130DFEE3001F501B /* libutp.a */,
 				A2F35BB915C5A0A100EBF632 /* QuickLookPlugin.qlgenerator */,
+				8F17FE261C70033F0066753B /* Test.app */,
+				8F17FE361C7003400066753B /* TestTests.xctest */,
+				8F17FE411C7003400066753B /* TestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1461,6 +1572,9 @@
 				BE1183410CE15DF00002D0F3 /* libminiupnp */,
 				3C7A11880D0B2E6700B5701F /* libnatpmp */,
 				4DDBB71509E16B3F00284745 /* Libraries */,
+				8F17FE271C70033F0066753B /* Test */,
+				8F17FE391C7003400066753B /* TestTests */,
+				8F17FE441C7003400066753B /* TestUITests */,
 				A2F35BBA15C5A0A100EBF632 /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -1801,6 +1915,38 @@
 			name = CLI;
 			sourceTree = "<group>";
 		};
+		8F17FE271C70033F0066753B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				8F17FE281C70033F0066753B /* AppDelegate.swift */,
+				8F9B7A1F1C701DD50004CC25 /* ubuntu.torrent */,
+				8F17FE2A1C70033F0066753B /* ViewController.swift */,
+				8F17FE2C1C70033F0066753B /* Main.storyboard */,
+				8F17FE2F1C70033F0066753B /* Assets.xcassets */,
+				8F17FE311C70033F0066753B /* Info.plist */,
+				8F17FE5C1C7003950066753B /* Test-Bridging-Header.h */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		8F17FE391C7003400066753B /* TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F17FE3A1C7003400066753B /* TestTests.swift */,
+				8F17FE3C1C7003400066753B /* Info.plist */,
+			);
+			path = TestTests;
+			sourceTree = "<group>";
+		};
+		8F17FE441C7003400066753B /* TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F17FE451C7003400066753B /* TestUITests.swift */,
+				8F17FE471C7003400066753B /* Info.plist */,
+			);
+			path = TestUITests;
+			sourceTree = "<group>";
+		};
 		A22CFCB50FC24F630009BD3E /* dht */ = {
 			isa = PBXGroup;
 			children = (
@@ -1869,6 +2015,16 @@
 		A2F35BBA15C5A0A100EBF632 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F58A7561C702E10001442FC /* libcurl_tvOS.a */,
+				8F6888101C702DE300114BE8 /* libcrypto.a */,
+				8F6888111C702DE300114BE8 /* libssl.a */,
+				8F0E963C1C701CA300B7E797 /* libiconv.tbd */,
+				8F0E963A1C701C8000B7E797 /* libz.tbd */,
+				8F0E96381C701C0500B7E797 /* libcurl_tvOS.a */,
+				8FB2C9961C700EE100A564AA /* libcrypto_tvOS.a */,
+				8FB2C9971C700EE100A564AA /* libssl_tvOS.a */,
+				8FA5629D1C7007D500EFA5D5 /* libcrypto.a */,
+				8F17FE601C7004890066753B /* CoreGraphics.framework */,
 				8F17FE201C7000720066753B /* libssl.a */,
 				8F17FE1E1C70000A0066753B /* libcryptopp.a */,
 				8F17FE1C1C6FFE5F0066753B /* libssl.tbd */,
@@ -2248,6 +2404,60 @@
 			productReference = 8D1107320486CEB800E47090 /* Transmission.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8F17FE251C70033F0066753B /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F17FE481C7003400066753B /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				8F17FE221C70033F0066753B /* Sources */,
+				8F17FE231C70033F0066753B /* Frameworks */,
+				8F17FE241C70033F0066753B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F17FE551C7003770066753B /* PBXTargetDependency */,
+			);
+			name = Test;
+			productName = Test;
+			productReference = 8F17FE261C70033F0066753B /* Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F17FE351C7003400066753B /* TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F17FE4C1C7003400066753B /* Build configuration list for PBXNativeTarget "TestTests" */;
+			buildPhases = (
+				8F17FE321C7003400066753B /* Sources */,
+				8F17FE331C7003400066753B /* Frameworks */,
+				8F17FE341C7003400066753B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F17FE381C7003400066753B /* PBXTargetDependency */,
+			);
+			name = TestTests;
+			productName = TestTests;
+			productReference = 8F17FE361C7003400066753B /* TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8F17FE401C7003400066753B /* TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F17FE501C7003400066753B /* Build configuration list for PBXNativeTarget "TestUITests" */;
+			buildPhases = (
+				8F17FE3D1C7003400066753B /* Sources */,
+				8F17FE3E1C7003400066753B /* Frameworks */,
+				8F17FE3F1C7003400066753B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F17FE431C7003400066753B /* PBXTargetDependency */,
+			);
+			name = TestUITests;
+			productName = TestUITests;
+			productReference = 8F17FE411C7003400066753B /* TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A22CFCB90FC24F710009BD3E /* dht */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A22CFCC40FC24F8A0009BD3E /* Build configuration list for PBXNativeTarget "dht" */;
@@ -2377,8 +2587,22 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "The Transmission Project";
+				TargetAttributes = {
+					8F17FE251C70033F0066753B = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8F17FE351C7003400066753B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8F17FE251C70033F0066753B;
+					};
+					8F17FE401C7003400066753B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8F17FE251C70033F0066753B;
+					};
+				};
 			};
 			buildConfigurationList = 4DF0C59A089918A300DD8943 /* Build configuration list for PBXProject "Transmission" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2410,6 +2634,7 @@
 				pt_PT,
 				da,
 				"pt-PT",
+				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Transmission */;
 			projectDirPath = "";
@@ -2426,6 +2651,9 @@
 				BE75C3480C729E9500DBEFE0 /* event */,
 				BE1183470CE160960002D0F3 /* miniupnp */,
 				3C7A118C0D0B2EB800B5701F /* natpmp */,
+				8F17FE251C70033F0066753B /* Test */,
+				8F17FE351C7003400066753B /* TestTests */,
+				8F17FE401C7003400066753B /* TestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -2593,6 +2821,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F17FE241C70033F0066753B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F68880F1C7025B300114BE8 /* Defaults.plist in Resources */,
+				8F9B7A201C701DD90004CC25 /* ubuntu.torrent in Resources */,
+				8F17FE301C70033F0066753B /* Assets.xcassets in Resources */,
+				8F17FE2E1C70033F0066753B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F17FE341C7003400066753B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F17FE3F1C7003400066753B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2F35BB615C5A0A100EBF632 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2711,7 +2964,6 @@
 				A2679294130E00A000CB7464 /* tr-utp.c in Sources */,
 				A23F29A2132A447400E9A83B /* announcer-http.c in Sources */,
 				A2AA9BE1132CAC8E00FA131E /* announcer-udp.c in Sources */,
-				A2D77452154CC25700A62B93 /* WebSeedTableView.m in Sources */,
 				A2A7B32A164F87D400B98C65 /* jsonsl.c in Sources */,
 				A25BFD69167BED3B0039D1AA /* variant-benc.c in Sources */,
 				A25BFD6B167BED3B0039D1AA /* variant-json.c in Sources */,
@@ -2804,6 +3056,38 @@
 				A234EA541453563B000F3E97 /* NSImageAdditions.m in Sources */,
 				A2AB883E16A399A6008FAD50 /* VDKQueue.m in Sources */,
 				A2451E6916ACE4EB00586E0E /* FileRenameSheetController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F17FE221C70033F0066753B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F17FE631C70052C0066753B /* TorrentGroup.m in Sources */,
+				8F0E963F1C701CF200B7E797 /* GroupsController.m in Sources */,
+				8F0E963E1C701CC800B7E797 /* FileListNode.m in Sources */,
+				8F17FE621C70052C0066753B /* Torrent.m in Sources */,
+				8F0E96401C701D5B00B7E797 /* TrackerNode.m in Sources */,
+				8F9B7A1E1C701D770004CC25 /* NSStringAdditions.m in Sources */,
+				8F17FE2B1C70033F0066753B /* ViewController.swift in Sources */,
+				8F9B7A271C701FC00004CC25 /* SessionSetup.m in Sources */,
+				8F17FE291C70033F0066753B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F17FE321C7003400066753B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F17FE3B1C7003400066753B /* TestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F17FE3D1C7003400066753B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F17FE461C7003400066753B /* TestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2911,6 +3195,21 @@
 			target = 4D18389609DEC0030047D688 /* libtransmission */;
 			targetProxy = 4D9A2BF409E16D30002D0FF9 /* PBXContainerItemProxy */;
 		};
+		8F17FE381C7003400066753B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F17FE251C70033F0066753B /* Test */;
+			targetProxy = 8F17FE371C7003400066753B /* PBXContainerItemProxy */;
+		};
+		8F17FE431C7003400066753B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F17FE251C70033F0066753B /* Test */;
+			targetProxy = 8F17FE421C7003400066753B /* PBXContainerItemProxy */;
+		};
+		8F17FE551C7003770066753B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D18389609DEC0030047D688 /* libtransmission */;
+			targetProxy = 8F17FE541C7003770066753B /* PBXContainerItemProxy */;
+		};
 		A226FDB10D0CDF6E005A7F71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C7A118C0D0B2EB800B5701F /* natpmp */;
@@ -2975,6 +3274,14 @@
 				A2A9D11A187DD75200C52A1F /* tr */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8F17FE2C1C70033F0066753B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F17FE2D1C70033F0066753B /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		A209EAE81142D294002B02D1 /* InfoActivityView.xib */ = {
@@ -3211,12 +3518,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				HEADER_SEARCH_PATHS = (
 					"third-party/curl/include",
-					"\"$(SRCROOT)/../openssl-1.0.1i-ios-master/openssl-1.0.1i-ios/include\"",
-					"\"$(SRCROOT)/../cryptopp-5.6.2-ios-master/cryptopp-ios/include\"",
+					"\"$(SRCROOT)/cryptopp-5.6.2-ios-master/cryptopp-ios/include\"",
+					"\"$(SRCROOT)/Build-OpenSSL-cURL-master/openssl/tvOS/include\"",
 				);
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = event;
+				SDKROOT = appletvos;
 				USER_HEADER_SEARCH_PATHS = "third-party/libevent/compat third-party/libevent/include /libs/openssl/include";
 			};
 			name = Debug;
@@ -3229,12 +3537,13 @@
 					"$(inherited)",
 					"third-party",
 					"third-party/libevent/include",
-					"\"$(SRCROOT)/../openssl-1.0.1i-ios-master/openssl-1.0.1i-ios/include\"",
+					"\"$(SRCROOT)/Build-OpenSSL-cURL-master/openssl/tvOS/include\"",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/build/Development\"",
 					"\"$(SRCROOT)/build/Debug\"",
+					"\"$(SRCROOT)/Build-OpenSSL-cURL-master/openssl/tvOS/lib\"",
 				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -3250,6 +3559,8 @@
 					"-DHAVE_ZLIB",
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "-lcrypto";
+				OTHER_LIBTOOLFLAGS = "-lcrypto";
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = transmission;
 				SDKROOT = appletvos9.2;
@@ -3377,6 +3688,7 @@
 				OTHER_CFLAGS = "-DENABLE_STRNATPMPERR";
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = natpmp;
+				SDKROOT = appletvos;
 			};
 			name = Release;
 		};
@@ -3387,6 +3699,7 @@
 				OTHER_CFLAGS = "-DENABLE_STRNATPMPERR";
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = natpmp;
+				SDKROOT = appletvos;
 			};
 			name = "Release - Debug";
 		};
@@ -3397,6 +3710,7 @@
 				OTHER_CFLAGS = "-DENABLE_STRNATPMPERR";
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = natpmp;
+				SDKROOT = appletvos;
 			};
 			name = Debug;
 		};
@@ -3408,12 +3722,13 @@
 					"$(inherited)",
 					"third-party",
 					"third-party/libevent/include",
-					"\"$(SRCROOT)/../openssl-1.0.1i-ios-master/openssl-1.0.1i-ios/include\"",
+					"\"$(SRCROOT)/Build-OpenSSL-cURL-master/openssl/tvOS/include\"",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/build/Development\"",
 					"\"$(SRCROOT)/build/Debug\"",
+					"\"$(SRCROOT)/Build-OpenSSL-cURL-master/openssl/tvOS/lib\"",
 				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -3428,6 +3743,8 @@
 					"-DHAVE_STRCASECMP",
 					"-DHAVE_ZLIB",
 				);
+				OTHER_LDFLAGS = "-lcrypto";
+				OTHER_LIBTOOLFLAGS = "-lcrypto";
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = transmission;
 				SDKROOT = appletvos9.2;
@@ -3516,12 +3833,299 @@
 			};
 			name = Release;
 		};
+		8F17FE491C7003400066753B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"third-party/curl/lib",
+					"\"$(SRCROOT)/../c61c0f7d9ab60f53ebb0-8881fbc554c62cad05d73844593fc4cb41cbd976/lib\"",
+					"\"$(SRCROOT)/../Build-OpenSSL-cURL-master/curl/lib\"",
+					"$(PROJECT_DIR)/Build-OpenSSL-cURL-master/openssl/tvOS/lib",
+					"$(PROJECT_DIR)/Build-OpenSSL-cURL-master/curl/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anviking.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Test/Test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		8F17FE4A1C7003400066753B /* Release - Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"third-party/curl/lib",
+					"\"$(SRCROOT)/../c61c0f7d9ab60f53ebb0-8881fbc554c62cad05d73844593fc4cb41cbd976/lib\"",
+					"\"$(SRCROOT)/../Build-OpenSSL-cURL-master/curl/lib\"",
+					"$(PROJECT_DIR)/Build-OpenSSL-cURL-master/openssl/tvOS/lib",
+					"$(PROJECT_DIR)/Build-OpenSSL-cURL-master/curl/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anviking.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Test/Test-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release - Debug";
+		};
+		8F17FE4B1C7003400066753B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"third-party/curl/lib",
+					"\"$(SRCROOT)/../c61c0f7d9ab60f53ebb0-8881fbc554c62cad05d73844593fc4cb41cbd976/lib\"",
+					"\"$(SRCROOT)/../Build-OpenSSL-cURL-master/curl/lib\"",
+					"$(PROJECT_DIR)/Build-OpenSSL-cURL-master/openssl/tvOS/lib",
+					"$(PROJECT_DIR)/Build-OpenSSL-cURL-master/curl/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anviking.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Test/Test-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F17FE4D1C7003400066753B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anviking.TestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test.app/Test";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		8F17FE4E1C7003400066753B /* Release - Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anviking.TestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test.app/Test";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release - Debug";
+		};
+		8F17FE4F1C7003400066753B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anviking.TestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test.app/Test";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F17FE511C7003400066753B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = TestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anviking.TestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_TARGET_NAME = Test;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		8F17FE521C7003400066753B /* Release - Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = TestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anviking.TestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_TARGET_NAME = Test;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release - Debug";
+		};
+		8F17FE531C7003400066753B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = TestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anviking.TestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_TARGET_NAME = Test;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		A22CFCBB0FC24F720009BD3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = dht;
+				SDKROOT = appletvos;
 			};
 			name = Debug;
 		};
@@ -3531,6 +4135,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = dht;
+				SDKROOT = appletvos;
 			};
 			name = "Release - Debug";
 		};
@@ -3540,6 +4145,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = dht;
+				SDKROOT = appletvos;
 			};
 			name = Release;
 		};
@@ -3635,12 +4241,13 @@
 					"$(inherited)",
 					"third-party",
 					"third-party/libevent/include",
-					"\"$(SRCROOT)/../openssl-1.0.1i-ios-master/openssl-1.0.1i-ios/include\"",
+					"\"$(SRCROOT)/Build-OpenSSL-cURL-master/openssl/tvOS/include\"",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/build/Development\"",
 					"\"$(SRCROOT)/build/Debug\"",
+					"\"$(SRCROOT)/Build-OpenSSL-cURL-master/openssl/tvOS/lib\"",
 				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -3655,6 +4262,8 @@
 					"-DHAVE_STRCASECMP",
 					"-DHAVE_ZLIB",
 				);
+				OTHER_LDFLAGS = "-lcrypto";
+				OTHER_LIBTOOLFLAGS = "-lcrypto";
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = transmission;
 				SDKROOT = appletvos9.2;
@@ -3697,12 +4306,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				HEADER_SEARCH_PATHS = (
 					"third-party/curl/include",
-					"\"$(SRCROOT)/../openssl-1.0.1i-ios-master/openssl-1.0.1i-ios/include\"",
-					"\"$(SRCROOT)/../cryptopp-5.6.2-ios-master/cryptopp-ios/include\"",
+					"\"$(SRCROOT)/cryptopp-5.6.2-ios-master/cryptopp-ios/include\"",
+					"\"$(SRCROOT)/Build-OpenSSL-cURL-master/openssl/tvOS/include\"",
 				);
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = event;
+				SDKROOT = appletvos;
 				USER_HEADER_SEARCH_PATHS = "third-party/libevent/compat third-party/libevent/include /libs/openssl/include";
 			};
 			name = "Release - Debug";
@@ -3717,6 +4327,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = utp;
+				SDKROOT = appletvos;
 			};
 			name = Debug;
 		};
@@ -3730,6 +4341,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = utp;
+				SDKROOT = appletvos;
 			};
 			name = "Release - Debug";
 		};
@@ -3744,6 +4356,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = utp;
+				SDKROOT = appletvos;
 			};
 			name = Release;
 		};
@@ -3804,6 +4417,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = miniupnp;
+				SDKROOT = appletvos;
 			};
 			name = Release;
 		};
@@ -3813,6 +4427,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = miniupnp;
+				SDKROOT = appletvos;
 			};
 			name = "Release - Debug";
 		};
@@ -3822,6 +4437,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = miniupnp;
+				SDKROOT = appletvos;
 			};
 			name = Debug;
 		};
@@ -3831,12 +4447,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				HEADER_SEARCH_PATHS = (
 					"third-party/curl/include",
-					"\"$(SRCROOT)/../openssl-1.0.1i-ios-master/openssl-1.0.1i-ios/include\"",
-					"\"$(SRCROOT)/../cryptopp-5.6.2-ios-master/cryptopp-ios/include\"",
+					"\"$(SRCROOT)/cryptopp-5.6.2-ios-master/cryptopp-ios/include\"",
+					"\"$(SRCROOT)/Build-OpenSSL-cURL-master/openssl/tvOS/include\"",
 				);
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = org.m0k.transmission;
 				PRODUCT_NAME = event;
+				SDKROOT = appletvos;
 				USER_HEADER_SEARCH_PATHS = "third-party/libevent/compat third-party/libevent/include /libs/openssl/include";
 			};
 			name = Release;
@@ -3920,6 +4537,36 @@
 				0053D3DA0C86774200545606 /* Debug */,
 				A250CFEB0CDA19680068B4B6 /* Release - Debug */,
 				4DF0C59D089918A300DD8943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8F17FE481C7003400066753B /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F17FE491C7003400066753B /* Debug */,
+				8F17FE4A1C7003400066753B /* Release - Debug */,
+				8F17FE4B1C7003400066753B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8F17FE4C1C7003400066753B /* Build configuration list for PBXNativeTarget "TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F17FE4D1C7003400066753B /* Debug */,
+				8F17FE4E1C7003400066753B /* Release - Debug */,
+				8F17FE4F1C7003400066753B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8F17FE501C7003400066753B /* Build configuration list for PBXNativeTarget "TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F17FE511C7003400066753B /* Debug */,
+				8F17FE521C7003400066753B /* Release - Debug */,
+				8F17FE531C7003400066753B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

@@ -22,7 +22,9 @@
  * DEALINGS IN THE SOFTWARE.
  *****************************************************************************/
 
-#import <Cocoa/Cocoa.h>
+@import Foundation;
+@import CoreFoundation;
+@import CoreGraphics;
 
 @interface TorrentGroup : NSObject
 {

@@ -1,4 +1,4 @@
 #ifdef __OBJC__
-#import <Cocoa/Cocoa.h>
+@import Foundation;
 #import <QuickLook/QuickLook.h>
 #endif

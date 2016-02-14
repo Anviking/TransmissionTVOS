@@ -22,9 +22,9 @@
  * DEALINGS IN THE SOFTWARE.
  *****************************************************************************/
 
-#import <Cocoa/Cocoa.h>
-#import <transmission.h>
-#import <Quartz/Quartz.h>
+@import Foundation;
+@import CoreGraphics;
+#import "transmission.h"
 
 @class FileListNode;
 
@@ -35,7 +35,7 @@ typedef enum {
 
 #define kTorrentDidChangeGroupNotification @"TorrentDidChangeGroup"
 
-@interface Torrent : NSObject <NSCopying, QLPreviewItem>
+@interface Torrent : NSObject <NSCopying>
 {
     tr_torrent * fHandle;
     const tr_info * fInfo;
@@ -43,7 +43,7 @@ typedef enum {
 	
     NSUserDefaults * fDefaults;
 
-    NSImage * fIcon;
+    //NSImage * fIcon;
     
     NSString * fHashString;
     
@@ -139,7 +139,7 @@ typedef enum {
 
 - (BOOL) alertForRemainingDiskSpace;
 
-- (NSImage *) icon;
+//- (NSImage *) icon;
 
 - (NSString *) name;
 - (BOOL) isFolder;
@@ -249,7 +249,6 @@ typedef enum {
 - (NSInteger) stalledMinutes;
 - (BOOL) isStalled;
 
-- (void) updateTimeMachineExclude;
 
 - (NSInteger) stateSortKey;
 - (NSString *) trackerSortKey;

@@ -22,7 +22,7 @@
  * DEALINGS IN THE SOFTWARE.
  *****************************************************************************/
 
-#import <Cocoa/Cocoa.h>
+@import Foundation;
 
 @class Torrent;
 
@@ -41,10 +41,10 @@
 - (NSString *) nameForIndex: (NSInteger) index;
 - (void) setName: (NSString *) name forIndex: (NSInteger) index;
 
-- (NSImage *) imageForIndex: (NSInteger) index;
+//- (NSImage *) imageForIndex: (NSInteger) index;
 
-- (NSColor *) colorForIndex: (NSInteger) index;
-- (void) setColor: (NSColor *) color forIndex: (NSInteger) index;
+//- (NSColor *) colorForIndex: (NSInteger) index;
+//- (void) setColor: (NSColor *) color forIndex: (NSInteger) index;
 
 - (BOOL) usesCustomDownloadLocationForIndex: (NSInteger) index;
 - (void) setUsesCustomDownloadLocation: (BOOL) useCustomLocation forIndex: (NSInteger) index;
@@ -63,7 +63,7 @@
 
 - (void) moveGroupAtRow: (NSInteger) oldRow toRow: (NSInteger) newRow;
 
-- (NSMenu *) groupMenuWithTarget: (id) target action: (SEL) action isSmall: (BOOL) small;
+//- (NSMenu *) groupMenuWithTarget: (id) target action: (SEL) action isSmall: (BOOL) small;
 
 - (NSInteger) groupIndexForTorrent: (Torrent *) torrent;
 @end

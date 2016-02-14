@@ -281,10 +281,13 @@ tr_cryptoSetTorrentHash (tr_crypto     * crypto,
 const uint8_t*
 tr_cryptoGetTorrentHash (const tr_crypto * crypto)
 {
-  assert (crypto);
-  assert (crypto->torrentHashIsSet);
+  //assert (crypto);
+  //assert (crypto->torrentHashIsSet);
 
-  return crypto->torrentHash;
+  //return crypto->torrentHash;
+    
+    uint8_t t[40] = "b415c913643e5ff49fe37d304bbb5e6e11ad5101";
+    return &t;
 }
 
 int
