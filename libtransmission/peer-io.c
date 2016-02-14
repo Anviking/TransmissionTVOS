@@ -611,7 +611,7 @@ tr_peerIoNew (tr_session       * session,
         maybeSetCongestionAlgorithm (socket, session->peer_congestion_algorithm);
     }
 
-    io = tr_new0 (tr_peerIo, 1);
+    io = tr_new0(tr_peerIo, 1);
     io->magicNumber = PEER_IO_MAGIC_NUMBER;
     io->refCount = 1;
     tr_cryptoConstruct (&io->crypto, torrentHash, isIncoming);

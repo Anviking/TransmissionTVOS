@@ -150,7 +150,7 @@ void tr_peerIoUnrefImpl          (const char              * file,
 #define PEER_IO_MAGIC_NUMBER 206745
 
 static inline bool
-tr_isPeerIo (const tr_peerIo * io)
+tr_isPeerIo (tr_peerIo * io)
 {
     return (io != NULL)
         && (io->magicNumber == PEER_IO_MAGIC_NUMBER)
