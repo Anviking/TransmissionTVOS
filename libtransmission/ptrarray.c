@@ -119,8 +119,8 @@ tr_ptrArrayLowerBound (const tr_ptrArray  * t,
 
       for (;;)
         {
-          const int half = (last - first) / 2;
-          const int c = compare (t->items[first + half], ptr);
+          int half = (last - first) / 2;
+          int c = compare (t->items[first + half], ptr);
 
           if (c < 0)
             {

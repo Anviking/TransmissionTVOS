@@ -152,6 +152,7 @@ void tr_peerIoUnrefImpl          (const char              * file,
 static inline bool
 tr_isPeerIo (tr_peerIo * io)
 {
+    
     return (io != NULL)
         && (io->magicNumber == PEER_IO_MAGIC_NUMBER)
         && (io->refCount >= 0)
